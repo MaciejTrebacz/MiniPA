@@ -28,7 +28,7 @@ namespace MiniPA
 
             allGateways.Add(newGateway);
             allGateways.Add(newGateway2);
-            int counter2 = allGateways.Sum(VARIABLE => VARIABLE.MyDevices.Count);
+            int AllDevicesInGateways = allGateways.Sum(VARIABLE => VARIABLE.MyDevices.Count);
 
             Console.WriteLine(newGateway.MyDevices.Count);
 
@@ -43,10 +43,10 @@ namespace MiniPA
                 newLight2
             };
 
-            int Counter = allDevices.Count(VARIABLE => VARIABLE.Status == ConnectionStatus.Error);
+            int DevicesWithErrorStatus = allDevices.Count(VARIABLE => VARIABLE.Status == ConnectionStatus.Error);
 
-            Console.WriteLine(Counter);
-            Console.WriteLine(counter2);
+            Console.WriteLine(DevicesWithErrorStatus);
+            Console.WriteLine(AllDevicesInGateways);
 
             Console.ReadLine();
 
