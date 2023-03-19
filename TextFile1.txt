@@ -1,0 +1,21 @@
+types 
+Smart waste bins
+smart lights
+
+- manufacturers string 
+- model string
+- serial number double
+- number of months int
+- Connection status enum (connected ,warning , error)
+
+GATEAWAY 
+- manufacturer 
+- address 
+-LIST<devices> SAME MANUFACTURER
+
+smart ligts type 
+- LED STREET 150 POWER
+- Halogen Street LIght 200 POWER
+
+smart waste bins
+- compactor 
